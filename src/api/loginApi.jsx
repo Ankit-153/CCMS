@@ -15,8 +15,7 @@ import { API_URL } from "../constants";
             { email, password },
             { withCredentials: true } //Allows cookies from backend
         );
-        console.log(response);
-        console.log("Login successful!");
+       
         return response.data; // Returns user details (if any)
 
     } catch (error) {
