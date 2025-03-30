@@ -22,7 +22,6 @@ function Login() {
     try{
         await loginUser(email, password);
         const userData= await getUser();
-        console.log(userData);
         dispatch(setUser(userData));
         navigate('/');
     }
