@@ -5,7 +5,7 @@ function Root() {
   return (
     <div>
       {/* Header */}
-      <header className="bg-indigo-600 text-white shadow-md p-2">
+      <header className="bg-gray-900 text-yellow-400 shadow-md p-2">
         <nav className="container mx-auto flex justify-between items-center p-4 space-between">
           <h1 className="text-2xl font-bold">
             <NavLink
@@ -14,7 +14,7 @@ function Root() {
                 isActive ? 'text-yellow-300 font-semibold' : 'hover:text-yellow-300'
               }
             >
-            My App
+            CollegeCompass
             </NavLink>
           </h1>
           <ul className="flex space-x-6">

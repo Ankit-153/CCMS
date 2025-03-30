@@ -3,11 +3,11 @@ import './App.css'
 import SignUp from './components/SignUp'
 import Login from './components/Login'
 import Root from './components/Root'
-import Home from './components/Home'
 import CollegePredictor from './components/CollegePredictor'
 import College from './components/College.jsx'
 import UpdateProfile from './components/UpdateProfile.jsx'
 import { createBrowserRouter,RouterProvider } from "react-router-dom";
+import HomePage from './components/Home'
 
 
 const BrowserRouter = createBrowserRouter([
@@ -15,7 +15,7 @@ const BrowserRouter = createBrowserRouter([
     path: "/",
     Component: Root,
     children: [
-      { index: true, Component: Home },
+      { index: true, Component: HomePage },
       { path: "/predict-college", Component: CollegePredictor,},
       { path: "/college", Component: College},
       { path : "/update-profile", Component: UpdateProfile},
