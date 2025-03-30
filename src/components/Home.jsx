@@ -1,7 +1,20 @@
 import { FiSearch, FiBarChart2, FiList, FiArrowRight, FiAward, FiBook, FiTrendingUp } from 'react-icons/fi';
 import { NavLink } from 'react-router-dom';
+import { useSelector } from 'react-redux';
+import { useNavigate } from 'react-router-dom';
+import { useEffect } from 'react';
 
 const HomePage = () => {
+
+   const navigate=useNavigate();
+  const user=useSelector((state) => state.user);
+    useEffect(()=>{
+        
+        if(!user || Object.keys(user).length===0 || !user.email){
+            navigate("/login"); // Redirect to login if user is not logged in
+        }
+    },[user]);
+  
   // Sample top colleges data with images
   const topColleges = [
     {
