@@ -14,7 +14,7 @@ function Root() {
                 isActive ? 'text-yellow-300 font-semibold' : 'hover:text-yellow-300'
               }
             >
-            CollegeCompass
+            College Compass
             </NavLink>
           </h1>
           <ul className="flex space-x-6">
